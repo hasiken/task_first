@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   get 'signup', to: 'users#new'
   delete "logout", to: "users#destroy"
-  resources :users, only: [:index, :show, :create]
+  resources :users, only: [:create]
 end
